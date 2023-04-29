@@ -1,0 +1,50 @@
+@import '../../styles/variable.scss';
+@import '../../styles/mixins.scss';
+
+.about {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__column {
+        width: 47%;
+        overflow: hidden;
+
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        color: $secondaryColor;
+        margin-bottom: 3rem;
+
+        overflow: hidden;
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        padding-left: 3rem;
+    }
+
+    &__list-item {
+        position: relative;
+        margin-bottom: 1rem;
+
+        &::before {
+            position: absolute;
+            top: 30%;
+            left: -3rem;
+
+            content: "";
+            border-top: 5px solid transparent;
+            border-left: 8px solid $secondaryColor;
+            border-bottom: 5px solid transparent;
+        }
+    }
+}
+.languages__name {
+    display: inline-block;
+    width: 100px;
+}

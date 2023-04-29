@@ -1,0 +1,42 @@
+@import "../../styles/variable.scss";
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        padding: 1rem;
+        margin-bottom: 20px;
+
+        background: none;
+
+        border: 1px solid rgba(125, 119, 137, 0.5);
+
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+
+        &:focus {
+            
+            outline: none;
+            border: 1px solid $mainColor;
+        }
+    }
+
+    &__message {
+        resize: none;
+        height: 200px;
+    }
+
+    &__submit {
+        width: 60%;
+    }
+}
+
+.not-validate {
+    color: $notRequiredColor;
+}
+
+.validate {
+    color: $requiredColor;
+}

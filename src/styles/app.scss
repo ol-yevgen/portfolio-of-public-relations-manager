@@ -1,0 +1,115 @@
+@import './variable.scss';
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 5rem 1fr 5rem;
+    position: relative;
+    z-index: -30;
+
+    height: 100vh;
+    max-width: 1600px;
+
+    margin: 0 auto;
+    padding: 0 6rem;
+
+    overflow: hidden;
+}
+
+.btn {
+    position: relative;
+    padding: 1.5rem 3rem;
+    background: $mainColor;
+
+    color: $bgColor;
+    letter-spacing: 0.3rem;
+
+    border: 3px solid $mainColor;
+
+    transition: all 0.8s;
+
+    &:hover {
+        background: $bgColor;
+        color: $mainColor;
+    }
+}
+
+.title {
+    display: inline-block;
+    position: relative;
+    margin: 4rem 0;
+
+    font-weight: 600;
+    font-size: 1.9rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+
+    color: $mainColor;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 110%;
+
+        content: "";
+        width: 1000%;
+        height: 1px;
+        background: $mainColor;
+    }
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+.animation-container {
+    height: 100%;
+}
+
+.fade {
+    height: 100%;
+}
+
+.main {
+    z-index: -20;
+    &__container {
+        position: relative;
+        z-index: -10;
+
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    z-index: -5;
+
+    width: 65%;
+    height: 100%;
+    padding: 0 3rem;
+    background: $bgColor;
+
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        background: url(../assets/mainPhoto.jpg) no-repeat 67%;
+        background-size: cover;
+    }
+}

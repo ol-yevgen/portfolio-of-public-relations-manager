@@ -1,0 +1,42 @@
+@import "./variable.scss";
+
+/*page animation*/
+
+.fade {
+    height: 100%;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 800ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 400ms;
+}
+
+/*page animation finished*/
+
+/*text animation*/
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+/*text animation finished*/

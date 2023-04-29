@@ -1,0 +1,22 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variable.scss';
+
+.header {
+    @include flex-container;
+    justify-content: space-between;
+
+    &__nav {
+        width: 100%;
+    }
+
+    &__selector {
+        position: relative;
+
+        @include link-hover;
+    }
+}
+.logo {
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+}
