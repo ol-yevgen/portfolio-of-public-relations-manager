@@ -12,7 +12,6 @@ import './contacts.scss';
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 const Contacts = () => {
-    console.log(API_KEY);
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: API_KEY
