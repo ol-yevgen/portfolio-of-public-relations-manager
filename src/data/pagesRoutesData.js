@@ -4,7 +4,6 @@ import MyProjects from "../pages/MyProjects/MyProjects";
 import Contacts from "../pages/Contacts/Contacts";
 import { createRef } from "react";
 
-
 const routes = [
     {
         path: '/',

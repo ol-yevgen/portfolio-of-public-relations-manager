@@ -61,7 +61,7 @@ const cleanForm = (values) => {
     return { cleanName, cleanSubject, cleanEmail, cleanMessage }
 }
 
-const ContactsForm = () => {
+const ContactsForm = ({ langButton }) => {
     const dispatch = useDispatch()
 
     const onSubmitHandler = (values) => {
@@ -145,7 +145,7 @@ const ContactsForm = () => {
                     className="btn form__submit"
                     onClick={() => dispatch(isSubmitClickStatus())}
                 >
-                    Send message
+                    {langButton}
                 </button>
             </Form>
         </Formik>

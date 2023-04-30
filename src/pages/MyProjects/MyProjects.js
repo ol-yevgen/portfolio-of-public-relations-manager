@@ -1,24 +1,31 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
 
+import { useChangeLanguage } from '../../hooks/useChangeLanguage';
+
 import ProjectsFilter from '../../components/ProjectsFilter/ProjectsFilter';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
 import './myProjects.scss';
 
 const MyProjects = () => {
+    const uaProjects = (state) => state.projects.projectsUa;
+    const enProjects = (state) => state.projects.projectsEn;
+
+    const projects = useChangeLanguage(uaProjects, enProjects);
 
     const filteredProjectsSelector = createSelector(
         (state) => state.filters.activeFilter,
-        (state) => state.projects.projects,
+        projects,
         (filter, projects) => {
             if (filter === 'all') {
+
                 return projects;
             } else {
                 return projects.filter(item => item.filter === filter)
             }
         }
     )
-
+    
     const filteredProjects = useSelector(filteredProjectsSelector);
 
     const renderProjectsList = (arr) => {
@@ -33,10 +40,12 @@ const MyProjects = () => {
 
     const elements = renderProjectsList(filteredProjects)
 
+    const title = useChangeLanguage('Портфоліо', 'Portfolio');
+
     return (
         <section className="portfolio">
             <div className="portfolio__wrapper">
-                <h2 className="title">Portfolio</h2>
+                <h2 className="title">{title}</h2>
                 <ProjectsFilter />
                 {elements}
             </div>

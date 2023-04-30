@@ -50,3 +50,9 @@
     right: 0;
     opacity: 1;
 }
+.menu__close {
+    right: -100%;
+    opacity: 0;
+
+    transition: all 1s .6s;
+}

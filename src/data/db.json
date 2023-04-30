@@ -1,9 +1,7 @@
 {
-    "projects": [
+    "ua": [
         {
-            "id": 1,
-            "name": "React-redux--Tracker",
-            "description": "Trainee project" 
+            "siteTitle": "Портфоліо Наталія Шпанюк"
         }
     ] 
 }

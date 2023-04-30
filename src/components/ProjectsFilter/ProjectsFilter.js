@@ -4,7 +4,9 @@ import classNames from 'classnames';
 import { filtersChanged } from '../../redux/features/slices/projectsFilterSlice';
 
 const ProjectsFilter = () => {
-    const { filters, activeFilter} = useSelector(state => state.filters);
+    const { filters, activeFilter } = useSelector(state => state.filters);
+    const siteLanguage = useSelector((state) => state.language.language)
+
     const dispatch = useDispatch();
 
     const renderFilters = (arr) => {
@@ -13,8 +15,15 @@ const ProjectsFilter = () => {
             return <h4 className="discription__title">Filters are not available</h4>
         }
 
-        return arr.map(({ name, label }) => {
+        return arr.map(({ name, label, labelUa }) => {
             const filterClass = classNames({ "active-filter": name === activeFilter })
+            const filtersLang = () => {
+                if (siteLanguage === 'ua') {
+                    return labelUa
+                } else {
+                    return label
+                }
+            }
 
             return <li
                 key={name}
@@ -22,7 +31,7 @@ const ProjectsFilter = () => {
                 className={`portfolio__filters-item ${filterClass}`}
                 onClick={() => dispatch(filtersChanged(name))}
             >
-                {label}
+                {filtersLang()}
             </li>
         })
     }

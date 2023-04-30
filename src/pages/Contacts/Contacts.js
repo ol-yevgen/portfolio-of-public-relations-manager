@@ -4,7 +4,9 @@ import { useJsApiLoader } from "@react-google-maps/api";
 
 import { useSendingAlertMessage, useSentAlertMessage, useNotSentAlertMessage, useErrorAlertMessage } from '../../hooks/useFormAlertMessage';
 import { useStartSpallingAnimation } from '../../hooks/useSpallingAnimate';
+import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 
+import { contactsTextDataUa, contactsTextDataEn } from '../../data/sectionData/contactsSectionTextData';
 import ContactsForm from '../../components/Form/Form';
 import {Map} from '../../components/Map/Map';
 import './contacts.scss';
@@ -12,19 +14,7 @@ import './contacts.scss';
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 const Contacts = () => {
-    const { isLoaded } = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: API_KEY
-    })
-     
-    const { pageLoaded, iconsRef, scopeSkillIcons } =
-        useStartSpallingAnimation(
-            0.1,
-            ' div, input, textarea, button',
-            { opacity: 1, y: '0%', visibility: 'visible' },
-            { opacity: 0, y: '100%', visibility: 'hidden' },
-            0.8
-        )
+
     const sendingMessageStatus = useSelector((state) => state.form.messageSending);
     const sentMessageStatus = useSelector((state) => state.form.messageSent);
     const submitFormStatus = useSelector((state) => state.form.submitClickStatus);
@@ -35,16 +25,30 @@ const Contacts = () => {
     const alertNotRequiredForm = useNotSentAlertMessage(submitFormStatus, sendingMessageStatus, errorFormStatus, sentMessageStatus);
     const alertErrorForm = useErrorAlertMessage(errorFormStatus);
 
+    const language = useChangeLanguage(contactsTextDataUa, contactsTextDataEn)
+
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: API_KEY
+    })
+
+    const { pageLoaded, iconsRef, scopeSkillIcons } =
+        useStartSpallingAnimation(
+            0.1,
+            ' div, input, textarea, button',
+            { opacity: 1, y: '0%', visibility: 'visible' },
+            { opacity: 0, y: '100%', visibility: 'hidden' },
+            0.8
+        )
+
+
     return (
         <section className="contacts">
 
             <div className="contacts__wrapper" >
-                <h2 className="title">CONTACTS</h2>
+                <h2 className="title">{language.title}</h2>
                 <p className="contacts__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero asperiores cupiditate
-                    necessitatibus quisquam at exercitationem veniam voluptatibus voluptatem, quasi
-                    reiciendis, magni, cumque alias impedit. Provident natus numquam ipsam dolorum
-                    accusamus?
+                    {language.text}
                 </p>
                 <AnimatePresence>
 
@@ -54,7 +58,7 @@ const Contacts = () => {
                         <div className="contacts__container" ref={scopeSkillIcons}>
                             <div className="contacts__left">
 
-                                <ContactsForm />
+                                <ContactsForm langButton={language.contactButton}/>
 
                             </div>
 
@@ -87,7 +91,6 @@ const Contacts = () => {
                                 </div>
                                 <div className="contacts__map">
                                     {isLoaded ? <Map/> : <div>Loading...</div>}
-                                    {/* <Map/> */}
                                 </div>
                             </div>
                         </div>

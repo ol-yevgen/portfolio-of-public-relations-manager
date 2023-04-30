@@ -1,5 +1,5 @@
-@import '../../styles/variable.scss';
-@import '../../styles/mixins.scss';
+@import "../../styles/variable.scss";
+@import "../../styles/mixins.scss";
 
 .main__menu {
     @include flex-container;
@@ -17,6 +17,7 @@
         }
     }
 }
+
 .lang-select {
     padding: 1rem 2rem;
 
@@ -35,6 +36,6 @@
     }
 
     &:focus {
-        outline: 3px solid $mainColor;
+        outline: 2px solid $mainColor;
     }
 }

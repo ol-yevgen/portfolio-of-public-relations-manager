@@ -15,13 +15,12 @@
         font-size: 1.4rem;
         line-height: 2.5rem;
         color: $secondaryColor;
-        margin-bottom: 3rem;
 
         overflow: hidden;
     }
 
     &__text {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     &__list {
@@ -44,6 +43,7 @@
         }
     }
 }
+
 .languages__name {
     display: inline-block;
     width: 100px;

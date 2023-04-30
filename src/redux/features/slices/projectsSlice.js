@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import projectsData from '../../../data/projectsData';
+import { projectsDataUa, projectsDataEn } from '../../../data/projectsData';
 
 const initialState = {
-    projects: projectsData
+    projectsUa: projectsDataUa,
+    projectsEn: projectsDataEn
 }
 
 export const projectsSlice = createSlice({

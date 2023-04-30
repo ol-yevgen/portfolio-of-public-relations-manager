@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+
+import { useChangeLanguage } from '../../hooks/useChangeLanguage';
+import { homeTextDataUa, homeTextDataEn } from '../../data/sectionData/homeSectionTextData';
 import { useLetterizeText, useStartTextAnimation, } from '../../hooks/useLetterizeText';
 
 import './home.scss';
@@ -7,25 +10,26 @@ import './home.scss';
 const Home = () => {
     const { pageLoaded, textRef, scope } = useStartTextAnimation()
 
-    const spellingTitle = useLetterizeText("Nataliia Shpaniuk");
+    const language = useChangeLanguage(homeTextDataUa, homeTextDataEn)
+    const spellingTitle = useLetterizeText(language.title);
 
     return (
         <section className="home">
             <div className="home__wrapper">
                 <div className={pageLoaded ? 'show' : 'hide'}
-                ref={textRef}>
-                <AnimatePresence>
-                    <h1
-                        className="home__title"
+                    ref={textRef}>
+                    <AnimatePresence>
+                        <h1
+                            className="home__title"
                             aria-label="Nataliia Shpaniuk"
-                        ref={scope}
-                    >
-                        {spellingTitle}
-                    </h1>
-                </AnimatePresence>
-            </div>
-                <p className="home__subtitle">PR-manager</p>
-                <Link to="/contacts" className="btn">Contact me</Link>
+                            ref={scope}
+                        >
+                            {spellingTitle}
+                        </h1>
+                    </AnimatePresence>
+                </div>
+                <p className="home__subtitle">{language.subtitle}</p>
+                <Link to="/contacts" className="btn">{language.contactButton}</Link>
             </div>
         </section>
     )

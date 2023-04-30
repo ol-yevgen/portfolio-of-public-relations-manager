@@ -6,7 +6,7 @@ import SocialList from '../../components/SocialList/SocialList';
 import './slidebar.scss'
 
 const Slidebar = ({ onCloseOpenMenu, burgerMenuStatus }) => {
-    const openCloseMenuClass = burgerMenuStatus ? 'mobile__menu menu__open' : 'mobile__menu';
+    const openCloseMenuClass = burgerMenuStatus ? 'mobile__menu menu__open' : 'mobile__menu menu__close';
 
     return (
         <div className={openCloseMenuClass}>
