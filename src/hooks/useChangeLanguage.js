@@ -1,6 +1,8 @@
 import { useCallback } from 'react';
+import { useSelector } from 'react-redux';
 
 export const useChangeLanguage = (ua, en) => {
+    const siteLanguage = useSelector((state) => state.language.language);
 
     const chackedLang = useCallback(() => {
         const checkLanguage = (siteLanguage) => {
@@ -14,8 +16,8 @@ export const useChangeLanguage = (ua, en) => {
             }
         }
 
-        return checkLanguage()
-    }, [ua, en])
+        return checkLanguage(siteLanguage)
+    }, [ua, en, siteLanguage])
 
     return chackedLang()
 }

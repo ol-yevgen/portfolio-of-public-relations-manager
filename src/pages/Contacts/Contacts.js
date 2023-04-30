@@ -41,7 +41,6 @@ const Contacts = () => {
             0.8
         )
 
-
     return (
         <section className="contacts">
 

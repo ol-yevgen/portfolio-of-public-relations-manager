@@ -1,25 +1,20 @@
 import { useDispatch } from 'react-redux';
 import { changeSiteLanguage } from '../../../redux/features/slices/languageSlice';
-import { useCallback } from 'react';
 
 const LanguageSelector = () => {
     const dispatch = useDispatch();
 
-    const changedLang = useCallback(() => {
-        const changeLang = (e) => {
-            dispatch(changeSiteLanguage(e.target.value));
-            localStorage.setItem('language', e.target.value)
-        }
-
-        return changeLang
-    }, [dispatch])
+    const changeLang = (e) => {
+        dispatch(changeSiteLanguage(e.target.value));
+        localStorage.setItem('language', e.target.value)
+    }
 
     return (
         <select
             className="lang-select"
             name="lang"
             id="lang-select"
-            onChange={changedLang}
+            onChange={changeLang}
         >
             <option
                 className="lang-select__ua"
