@@ -76,7 +76,7 @@ const ContactsForm = ({ langButton }) => {
         dispatch(isSubmitClickStatus())
         dispatch(isMessageSending())
 
-        postData("https://formsubmit.co/ajax/oliinykyevgenii@gmail.com", newForm, values, dispatch)
+        postData("https://formsubmit.co/ajax/natalishpanyuk93@gmail.com", newForm, values, dispatch)
     }
 
     return (
@@ -104,7 +104,7 @@ const ContactsForm = ({ langButton }) => {
             onSubmit={values => onSubmitHandler(values)}
         >
             <Form
-                action='https://formsubmit.co/ajax/oliinykyevgenii@gmail.com'
+                action='https://formsubmit.co/ajax/natalishpanyuk93@gmail.com'
                 name='form'
                 method='post'
                 className="form"
