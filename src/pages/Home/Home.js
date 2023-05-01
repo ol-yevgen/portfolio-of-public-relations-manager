@@ -21,7 +21,7 @@ const Home = () => {
                     <AnimatePresence>
                         <h1
                             className="home__title"
-                            aria-label="Nataliia Shpaniuk"
+                            aria-label={language.title}
                             ref={scope}
                         >
                             {spellingTitle}

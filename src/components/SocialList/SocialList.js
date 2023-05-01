@@ -8,10 +8,11 @@ const SocialList = () => {
         return <a
             key={uuidv4()}
             href={icon.link}
-            name={icon.link}
             className='social__link'
             target='_blank'
-            rel='noreferrer'>
+            rel='noreferrer'
+            aria-label="Visit my social account"
+        >
                 <li className="social__icon">
                     {icon.icon}
                 </li>

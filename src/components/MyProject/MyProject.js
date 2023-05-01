@@ -12,7 +12,7 @@ const MyProject = ({ image, subtitle, link }) => {
             >
                 <div className="discription">
                     <div className="discription__wrapper">
-                        <h4 className="discription__title">{subtitle}</h4>
+                        <h4 className="discription__title" aria-label={subtitle}>{subtitle}</h4>
                         <a href={link}>read more</a>
                     </div>
                 </div>
