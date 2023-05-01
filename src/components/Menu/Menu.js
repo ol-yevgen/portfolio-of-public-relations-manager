@@ -9,7 +9,7 @@ const Menu = () => {
             <div className="main__menu">
                 <Navbar />
                 <div className="header__selector">
-                    <LanguageSelector/>
+                    <LanguageSelector />
                 </div>
             </div>
         </>

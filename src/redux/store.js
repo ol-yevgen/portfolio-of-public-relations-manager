@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import reducer from './features/combineReducers';
+import reducers from './features/combineReducers';
 
 const stringMiddleware = ({ dispatch, getState }) => (next) => (action) => {
     if (typeof action === 'string') {
@@ -12,7 +12,7 @@ const stringMiddleware = ({ dispatch, getState }) => (next) => (action) => {
 }
 
 const store = configureStore({
-    reducer: reducer,
+    reducer: reducers,
     middleware: getDefaultMiddleware => getDefaultMiddleware().concat(stringMiddleware),
     devTools: process.env.NODE_ENV !== 'production',
 })

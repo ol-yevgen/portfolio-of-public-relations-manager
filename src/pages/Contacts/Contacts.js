@@ -15,6 +15,8 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 const Contacts = () => {
 
+    console.log('contacts page');
+
     const sendingMessageStatus = useSelector((state) => state.form.messageSending);
     const sentMessageStatus = useSelector((state) => state.form.messageSent);
     const submitFormStatus = useSelector((state) => state.form.submitClickStatus);

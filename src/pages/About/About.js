@@ -65,7 +65,6 @@ const About = () => {
                     <div className="about__wrapper" ref={scopeSkillIcons}>
                         {section}
                     </div>
-
                 </div>
             </AnimatePresence>
         </section >

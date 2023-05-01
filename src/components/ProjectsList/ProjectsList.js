@@ -39,7 +39,6 @@ const ProjectsList = ({ title, text, projects }) => {
                         {text}
                     </p>
 
-
                     <ul className="portfolio__items" >
                         {elements}
                     </ul>

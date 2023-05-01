@@ -8,9 +8,9 @@ import { useLetterizeText, useStartTextAnimation, } from '../../hooks/useLetteri
 import './home.scss';
 
 const Home = () => {
-    const { pageLoaded, textRef, scope } = useStartTextAnimation()
-
     const language = useChangeLanguage(homeTextDataUa, homeTextDataEn)
+
+    const { pageLoaded, textRef, scope } = useStartTextAnimation()
     const spellingTitle = useLetterizeText(language.title);
 
     return (

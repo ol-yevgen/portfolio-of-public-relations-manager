@@ -1,18 +1,6 @@
 @import "../../styles/variable.scss";
 
-
-@media (min-width: 900px) {
-    .header__burger {
-        display: none;
-    }
-
-    .mobile__menu {
-        display: none !important;
-    }
-}
-
-@media (max-width: 900px) {
-    .header__burger {
+.header__burger {
         position: relative;
         z-index: 100;
         width: 40px;
@@ -174,4 +162,3 @@
             transform: translate(0, 0px);
         }
     }
-}

@@ -1,8 +1,10 @@
+import {useMemo} from 'react'
 import { Route, Routes, useLocation } from "react-router-dom";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import routes from '../data/pagesRoutesData';
 
 const AnimatedRoutes = () => {
+    const memoRouts = useMemo(() => routes, []);
     const location = useLocation();
 
     const { nodeRef } =
@@ -21,7 +23,7 @@ const AnimatedRoutes = () => {
                     {() => (
                         <div ref={nodeRef} className="fade">
                             <Routes location={location} key={location.pathname}>
-                                {routes.map((route) => {
+                                {memoRouts.map((route) => {
                                     return <Route
                                         key={route.path}
                                         path={route.path}

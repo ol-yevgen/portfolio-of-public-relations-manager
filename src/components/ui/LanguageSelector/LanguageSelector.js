@@ -1,12 +1,14 @@
 import { useDispatch } from 'react-redux';
 import { changeSiteLanguage } from '../../../redux/features/slices/languageSlice';
+import { openCloseMenu } from '../../../redux/features/slices/burgerSlice';
 
 const LanguageSelector = () => {
     const dispatch = useDispatch();
 
     const changeLang = (e) => {
         dispatch(changeSiteLanguage(e.target.value));
-        localStorage.setItem('language', e.target.value)
+        dispatch(openCloseMenu())
+        // localStorage.setItem('language', e.target.value)
     }
 
     return (

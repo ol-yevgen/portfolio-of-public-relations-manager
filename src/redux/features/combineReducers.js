@@ -6,7 +6,7 @@ import projectsSlice from './slices/projectsSlice';
 import filtersSlice from './slices/projectsFilterSlice'
 import formSlice from './slices/formSlice';
 
-const reducer = combineReducers({
+const reducers = combineReducers({
     language: languageSlice.reducer,
     burgerMenu: burgerSlice.reducer,
     projects:  projectsSlice.reducer,
@@ -14,4 +14,4 @@ const reducer = combineReducers({
     form: formSlice.reducer
 })
 
-export default reducer;
+export default reducers;

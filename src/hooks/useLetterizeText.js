@@ -54,8 +54,8 @@ export const useLetterAnimation = (pageLoaded) => {
         animate(
             'span',
             pageLoaded
-                ? { opacity: 1, rotate: 0}
-                : { opacity: 0, rotate: -90},
+                ? { opacity: 1, rotate: 0 }
+                : { opacity: 0, rotate: -90 },
             {
                 duration: 0.2,
                 delay: pageLoaded ? staggerMenuItems : 0,
