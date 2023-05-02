@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import Photo from '../../assets/mobilePhoto.webp'
 
 import Navbar from '../Navbar/Navbar';
 import LanguageSelector from '../../components/ui/LanguageSelector/LanguageSelector';
@@ -14,7 +16,7 @@ const Slidebar = ({ onCloseOpenMenu, burgerMenuStatus }) => {
                 <LanguageSelector/>
             </div>
             <div className="mobile__photo">
-                <div className="mobile__photo-img"></div>
+                <LazyLoadImage src={Photo} width='100px' height='100px'alt=''></LazyLoadImage>
             </div>
             <Navbar 
                 onCloseOpenMenu={onCloseOpenMenu}
