@@ -1,4 +1,8 @@
 @import './variable.scss';
+@import '../pages/Home/home.scss';
+@import '../pages/About/about.scss';
+@import '../pages/MyProjects/myProjects.scss';
+@import '../pages/Contacts/contacts.scss';
 
 .wrapper {
     display: grid;

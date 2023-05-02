@@ -1,8 +1,10 @@
+import { Suspense } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./layouts/Header/Header";
 import Footer from "./layouts/Footer/Footer";
 import AnimatedRoutes from "./pages/AnimatedRoutes";
+import Spinner from "./components/Spinner/Spinner";
 
 import './styles/app.scss';
 
@@ -17,7 +19,9 @@ const App = () => {
                             <div className="photo__image"></div>
                         </div>
                         <div className="container">
-                            <AnimatedRoutes />
+                            <Suspense fallback={<Spinner />}>
+                                <AnimatedRoutes />
+                            </Suspense>
                         </div>
                     </div>
                 </main>

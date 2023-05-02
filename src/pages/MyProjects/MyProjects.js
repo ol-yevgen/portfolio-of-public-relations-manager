@@ -5,7 +5,6 @@ import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 
 import ProjectsFilter from '../../components/ProjectsFilter/ProjectsFilter';
 import ProjectsList from '../../components/ProjectsList/ProjectsList';
-import './myProjects.scss';
 
 const MyProjects = () => {
     const uaProjects = (state) => state.projects.projectsUa;

@@ -10,7 +10,7 @@ const containerStyle = {
 
 const defaultOptions = {
     disableDefaultUI: true,
-    panControl: false,
+    panControl: true,
     zoomControl: true,
     mapTypeControl: false,
     scaleConrtrol: false,

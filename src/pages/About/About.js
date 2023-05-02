@@ -6,7 +6,6 @@ import { useStartSpallingAnimation } from '../../hooks/useSpallingAnimate';
 import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 
 import cv from '../../data/cv.pdf';
-import './about.scss';
 
 const About = () => {
     const { pageLoaded, iconsRef, scopeSkillIcons } =

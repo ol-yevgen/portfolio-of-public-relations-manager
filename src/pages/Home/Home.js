@@ -5,8 +5,6 @@ import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 import { homeTextDataUa, homeTextDataEn } from '../../data/sectionData/homeSectionTextData';
 import { useLetterizeText, useStartTextAnimation, } from '../../hooks/useLetterizeText';
 
-import './home.scss';
-
 const Home = () => {
     const language = useChangeLanguage(homeTextDataUa, homeTextDataEn)
 

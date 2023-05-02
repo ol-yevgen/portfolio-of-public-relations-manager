@@ -1,8 +1,15 @@
-import Home from "../pages/Home/Home"
-import About from "../pages/About/About";
-import MyProjects from "../pages/MyProjects/MyProjects";
-import Contacts from "../pages/Contacts/Contacts";
-import { createRef } from "react";
+// import Home from "../pages/Home/Home"
+// import About from "../pages/About/About";
+// import MyProjects from "../pages/MyProjects/MyProjects";
+// import Contacts from "../pages/Contacts/Contacts";
+import { lazy, createRef } from "react";
+
+
+const Page404 = lazy(() => import('../pages/404'))
+const Home = lazy(() => import('../pages/Home/Home'))
+const About = lazy(() => import('../pages/About/About'))
+const MyProjects = lazy(() => import('../pages/MyProjects/MyProjects'))
+const Contacts = lazy(() => import('../pages/Contacts/Contacts'))
 
 const routes = [
     {
@@ -27,6 +34,12 @@ const routes = [
         path: '/contacts',
         name: 'Contacts',
         element: <Contacts />,
+        nodeRef: createRef()
+    },
+    {
+        path: '*',
+        name: '404',
+        element: <Page404 />,
         nodeRef: createRef()
     }
 ]
