@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { useImageLazyLoading } from '../../hooks/useImageLazyLoading'
+import placeholder from '../../assets/placeholder-image.png';
+
 const MyProject = ({ image, subtitle, link }) => {
+    const imageLazyLoading = useImageLazyLoading(image)
     return (
         <AnimatePresence>
             <motion.li
                 className="portfolio__item"
-                style={{ backgroundImage: `url(${image})` }}
+                style={{ backgroundImage: `url(${imageLazyLoading || placeholder})` }}
                 initial={{ opacity: 0, transform: 'translateY(10%)', transition: {delay: .2} }}
                 animate={{ opacity: 1, transform: 'translateY(0%)', transition: { duration: .8, ease: 'easeOut'} }}
             >
