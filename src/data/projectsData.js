@@ -1,34 +1,34 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import Ukraine1 from '../assets/myProjects/ukraine24/1.png';
-import Ukraine2 from '../assets/myProjects/ukraine24/2.png';
-import Ukraine3 from '../assets/myProjects/ukraine24/3.png';
-import Ukraine4 from '../assets/myProjects/ukraine24/4.png';
-import Ukraine5 from '../assets/myProjects/ukraine24/5.png';
-import Ukraine6 from '../assets/myProjects/ukraine24/6.png';
-import Ukraine7 from '../assets/myProjects/ukraine24/7.png';
-import Ukraine8 from '../assets/myProjects/ukraine24/8.png';
-import Ukraine9 from '../assets/myProjects/ukraine24/9.png';
+import Ukraine1 from '../assets/myProjects/ukraine24/1.webp';
+import Ukraine2 from '../assets/myProjects/ukraine24/2.webp';
+import Ukraine3 from '../assets/myProjects/ukraine24/3.webp';
+import Ukraine4 from '../assets/myProjects/ukraine24/4.webp';
+import Ukraine5 from '../assets/myProjects/ukraine24/5.webp';
+import Ukraine6 from '../assets/myProjects/ukraine24/6.webp';
+import Ukraine7 from '../assets/myProjects/ukraine24/7.webp';
+import Ukraine8 from '../assets/myProjects/ukraine24/8.webp';
+import Ukraine9 from '../assets/myProjects/ukraine24/9.webp';
 
-import Fresenius1 from '../assets/myProjects/fresenius/1.png'
-import Fresenius2 from '../assets/myProjects/fresenius/2.png'
-import Fresenius3 from '../assets/myProjects/fresenius/3.png'
-import Fresenius4 from '../assets/myProjects/fresenius/4.png'
-import Fresenius5 from '../assets/myProjects/fresenius/5.png'
-import Fresenius6 from '../assets/myProjects/fresenius/6.png'
-import Fresenius7 from '../assets/myProjects/fresenius/7.png'
-import Fresenius8 from '../assets/myProjects/fresenius/8.png'
-import Fresenius9 from '../assets/myProjects/fresenius/9.png'
+import Fresenius1 from '../assets/myProjects/fresenius/1.webp'
+import Fresenius2 from '../assets/myProjects/fresenius/2.webp'
+import Fresenius3 from '../assets/myProjects/fresenius/3.webp'
+import Fresenius4 from '../assets/myProjects/fresenius/4.webp'
+import Fresenius5 from '../assets/myProjects/fresenius/5.webp'
+import Fresenius6 from '../assets/myProjects/fresenius/6.webp'
+import Fresenius7 from '../assets/myProjects/fresenius/7.webp'
+import Fresenius8 from '../assets/myProjects/fresenius/8.webp'
+import Fresenius9 from '../assets/myProjects/fresenius/9.webp'
 
-import LeverX1 from '../assets/myProjects/leverx/1.png'
-import LeverX2 from '../assets/myProjects/leverx/2.png'
-import LeverX3 from '../assets/myProjects/leverx/3.png'
-import LeverX4 from '../assets/myProjects/leverx/4.png'
+import LeverX1 from '../assets/myProjects/leverx/1.webp'
+import LeverX2 from '../assets/myProjects/leverx/2.webp'
+import LeverX3 from '../assets/myProjects/leverx/3.webp'
+import LeverX4 from '../assets/myProjects/leverx/4.webp'
 
-import Instagram1 from '../assets/myProjects/instagram/1.png'
-import Instagram2 from '../assets/myProjects/instagram/2.png'
-import Instagram3 from '../assets/myProjects/instagram/3.png'
-import Instagram4 from '../assets/myProjects/instagram/4.png'
+import Instagram1 from '../assets/myProjects/instagram/1.webp'
+import Instagram2 from '../assets/myProjects/instagram/2.webp'
+import Instagram3 from '../assets/myProjects/instagram/3.webp'
+import Instagram4 from '../assets/myProjects/instagram/4.webp'
 
 import YouTube1 from '../assets/myProjects/youtube/1.webp'
 import YouTube2 from '../assets/myProjects/youtube/2.webp'
