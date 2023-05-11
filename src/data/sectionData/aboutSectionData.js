@@ -10,23 +10,16 @@ export const aboutSectionDataUa = [
         download: 'Резюме'
     },
     {
-        title: 'Інтереси',
-        services: [
-            'Малювання & Фарбування',
-            'Читання & Писання',
-            'Музика & Кіно',
-            'Подорожі & Пікнік',
-            'Дощ & Сніг'
-        ]
-    },
-    {
         title: 'Навички',
         services: [
-            'Куховарство',
-            'Графічний дізайн',
-            'Комунікація',
-            'Креативність',
-            'Пунктуальність'
+            'Створення комунікаційних стратегій',
+            'Створення контент-плану',
+            'Написання різних видів журналістських та піар-текстів',
+            'Написання текстів для соцмереж',
+            'Редагування текстів',
+            'Антикризові комунікації',
+            'Івент-менеджмент',
+            'Проджект-менеджмент '
 
         ]
     },
@@ -39,19 +32,26 @@ export const aboutSectionDataUa = [
             </>,
             <>
                 <span className="languages__name">English:</span>
-                <span className="languages__rating">B1</span>
+                <span className="languages__rating">B2</span>
+            </>,
+            <>
+                <span className="languages__name">Poland:</span>
+                <span className="languages__rating">A2</span>
             </>,
             <>
                 <span className="languages__name">Russian:</span>
                 <span className="languages__rating">Вільно</span>
             </>,
-            <>
-                <span className="languages__name">Poland:</span>
-                <span className="languages__rating">Базовий</span>
-            </>,
-
         ]
-    }
+    },
+    {
+        title: 'Інтереси',
+        services: [
+            'Авіація',
+            'Книги',
+            'Подорожі',
+        ]
+    },
 ]
 
 export const aboutSectionDataEn = [
@@ -66,24 +66,16 @@ export const aboutSectionDataEn = [
         download: 'Download CV'
     },
     {
-        title: 'interests',
-        services: [
-            'Painting & Drawing',
-            'Reading & Writing',
-            'Music & Cinema',
-            'Travel & Picnik',
-            'Rain & Snow'
-        ]
-    },
-    {
         title: 'Services',
         services: [
-            'Web Development',
-            'Graphic Design',
-            'Landing Page',
-            'On - Page SEO',
-            'Web Hosting'
-
+            'Creation of communication strategies',
+            'Creating a content plan',
+            'Writing different types of journalistic and PR texts',
+            'Writing texts for social networks',
+            'Editing of texts',
+            'Anti-crisis communications',
+            'Event management',
+            'Project management',
         ]
     },
     {
@@ -91,21 +83,28 @@ export const aboutSectionDataEn = [
         services: [
             <>
                 <span className="languages__name">Ukranian:</span>
-                <span className="languages__rating">Native</span>
+                <span className="languages__rating">Fluent</span>
             </>,
             <>
                 <span className="languages__name">English:</span>
-                <span className="languages__rating">B1</span>
+                <span className="languages__rating">B2</span>
+            </>,
+            <>
+                <span className="languages__name">Poland:</span>
+                <span className="languages__rating">A2</span>
             </>,
             <>
                 <span className="languages__name">Russian:</span>
                 <span className="languages__rating">Fluent</span>
             </>,
-            <>
-                <span className="languages__name">Poland:</span>
-                <span className="languages__rating">Beginner</span>
-            </>,
-
         ]
-    }
+    },
+    {
+        title: 'interests',
+        services: [
+            'Aviation',
+            'Books',
+            'Traveling',
+        ]
+    },
 ]

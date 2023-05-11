@@ -1,9 +1,4 @@
-// import Home from "../pages/Home/Home"
-// import About from "../pages/About/About";
-// import MyProjects from "../pages/MyProjects/MyProjects";
-// import Contacts from "../pages/Contacts/Contacts";
 import { lazy, createRef } from "react";
-
 
 const Page404 = lazy(() => import('../pages/404'))
 const Home = lazy(() => import('../pages/Home/Home'))
