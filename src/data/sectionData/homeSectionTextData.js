@@ -1,7 +1,7 @@
 export const homeTextDataUa = {
     title: "Наталія Шпанюк",
     subtitle: "PR-менеджер",
-    contactButton: "Зв'язатись"
+    contactButton: "Зв'язатися"
 }
 
 export const homeTextDataEn = {

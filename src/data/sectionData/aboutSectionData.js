@@ -4,8 +4,8 @@ export const aboutSectionDataUa = [
         text: 'Ваш ідеальний креативний PR-менеджер, оскільки:',
         services: [
             '4 роки працюю й удосконалююсь у піарі та журналістиці, 2 роки — у диджиталі',
-            'не боюсь дедлайнів і фрази: «Мені через годину потрібен реліз» :)',
-            'організовую заходи, створюю контент для ЗМІ і соцмереж',
+            'Не боюсь дедлайнів і фрази: «Мені через годину потрібен реліз» :)',
+            'Організовую заходи, створюю контент для ЗМІ і соцмереж',
         ],
         download: 'Резюме'
     },
@@ -31,15 +31,15 @@ export const aboutSectionDataUa = [
                 <span className="languages__rating">Вільно</span>
             </>,
             <>
-                <span className="languages__name">English:</span>
+                <span className="languages__name">Англійська:</span>
                 <span className="languages__rating">B2</span>
             </>,
             <>
-                <span className="languages__name">Poland:</span>
+                <span className="languages__name">Польська:</span>
                 <span className="languages__rating">A2</span>
             </>,
             <>
-                <span className="languages__name">Russian:</span>
+                <span className="languages__name">Російська:</span>
                 <span className="languages__rating">Вільно</span>
             </>,
         ]
