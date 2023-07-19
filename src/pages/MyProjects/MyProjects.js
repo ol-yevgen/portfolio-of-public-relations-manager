@@ -17,7 +17,6 @@ const MyProjects = () => {
         projects,
         (filter, projects) => {
             if (filter === 'all') {
-
                 return projects;
             } else {
                 return projects.filter(item => item.filter === filter)

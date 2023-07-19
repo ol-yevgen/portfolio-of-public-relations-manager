@@ -5,7 +5,7 @@ import { aboutSectionDataUa, aboutSectionDataEn } from '../../data/sectionData/a
 import { useStartSpallingAnimation } from '../../hooks/useSpallingAnimate';
 import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 
-import cv from '../../data/cv.pdf';
+import cv from '../../data/CV_Shpaniuk_N.pdf';
 
 const About = () => {
     const { pageLoaded, iconsRef, scopeSkillIcons } =
@@ -36,7 +36,7 @@ const About = () => {
                                     )
                                 })}
                             </ul>
-                            <a href={cv} className="btn" download>{section.download}</a>
+                            <a href={cv} className="btn" download='CV_Shpaniuk_N'>{section.download}</a>
                         </>
                     ) : <ul className="about__list">
                         {
