@@ -1,13 +1,17 @@
 import { v4 as uuidv4 } from 'uuid';
+import { useSelector } from 'react-redux';
 import { AnimatePresence } from 'framer-motion';
 
 import { aboutSectionDataUa, aboutSectionDataEn } from '../../data/sectionData/aboutSectionData';
 import { useStartSpallingAnimation } from '../../hooks/useSpallingAnimate';
 import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 
-import cv from '../../data/CV_Shpaniuk_N.pdf';
+import cvENG from '../../data/Shpanuik_Nаtaliia_CV_eng.pdf';
+import cvUA from '../../data/Shpanuik_Nаtaliia_CV_ua.pdf';
 
 const About = () => {
+    const lang = useSelector((state) => state.language.language);
+
     const { pageLoaded, iconsRef, scopeSkillIcons } =
         useStartSpallingAnimation(
             0.1,
@@ -36,7 +40,7 @@ const About = () => {
                                     )
                                 })}
                             </ul>
-                            <a href={cv} className="btn" download='CV_Shpaniuk_N'>{section.download}</a>
+                            <a href={lang === 'en' ? cvENG : cvUA} className="btn" download='CV_Shpaniuk_N'>{section.download}</a>
                         </>
                     ) : <ul className="about__list">
                         {
