@@ -22,6 +22,18 @@ const filtersData = [
         label: 'LeverX'
     },
     {
+        name: 'freelance',
+        labelUa: 'Freelance',
+
+        label: 'Freelance'
+    },
+    {
+        name: 'facebook',
+        labelUa: 'Facebook',
+
+        label: 'Facebook'
+    },
+    {
         name: 'instagram',
         labelUa: 'Instagram',
 

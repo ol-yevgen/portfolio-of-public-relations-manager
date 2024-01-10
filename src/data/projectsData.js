@@ -9,6 +9,7 @@ import Ukraine6 from '../assets/myProjects/ukraine24/6.webp';
 import Ukraine7 from '../assets/myProjects/ukraine24/7.webp';
 import Ukraine8 from '../assets/myProjects/ukraine24/8.webp';
 import Ukraine9 from '../assets/myProjects/ukraine24/9.webp';
+import Ukraine10 from '../assets/myProjects/ukraine24/10.webp';
 
 import Fresenius1 from '../assets/myProjects/fresenius/1.webp'
 import Fresenius2 from '../assets/myProjects/fresenius/2.webp'
@@ -20,15 +21,53 @@ import Fresenius7 from '../assets/myProjects/fresenius/7.webp'
 import Fresenius8 from '../assets/myProjects/fresenius/8.webp'
 import Fresenius9 from '../assets/myProjects/fresenius/9.webp'
 
+import Freelance1 from '../assets/myProjects/freelance/1.webp'
+import Freelance2 from '../assets/myProjects/freelance/2.webp'
+import Freelance3 from '../assets/myProjects/freelance/3.webp'
+import Freelance4 from '../assets/myProjects/freelance/4.webp'
+import Freelance5 from '../assets/myProjects/freelance/5.webp'
+import Freelance6 from '../assets/myProjects/freelance/6.webp'
+import Freelance7 from '../assets/myProjects/freelance/7.webp'
+import Freelance8 from '../assets/myProjects/freelance/8.webp'
+import Freelance9 from '../assets/myProjects/freelance/9.webp'
+import Freelance10 from '../assets/myProjects/freelance/10.webp'
+import Freelance11 from '../assets/myProjects/freelance/11.webp'
+
 import LeverX1 from '../assets/myProjects/leverx/1.webp'
 import LeverX2 from '../assets/myProjects/leverx/2.webp'
 import LeverX3 from '../assets/myProjects/leverx/3.webp'
 import LeverX4 from '../assets/myProjects/leverx/4.webp'
 
+import Facebook1 from '../assets/myProjects/facebook/1.webp'
+import Facebook2 from '../assets/myProjects/facebook/2.webp'
+import Facebook3 from '../assets/myProjects/facebook/3.webp'
+import Facebook4 from '../assets/myProjects/facebook/4.webp'
+import Facebook5 from '../assets/myProjects/facebook/5.webp'
+import Facebook6 from '../assets/myProjects/facebook/6.webp'
+import Facebook7 from '../assets/myProjects/facebook/7.webp'
+import Facebook8 from '../assets/myProjects/facebook/8.webp'
+import Facebook9 from '../assets/myProjects/facebook/9.webp'
+import Facebook10 from '../assets/myProjects/facebook/10.webp'
+import Facebook11 from '../assets/myProjects/facebook/11.webp'
+import Facebook12 from '../assets/myProjects/facebook/12.webp'
+import Facebook13 from '../assets/myProjects/facebook/13.webp'
+import Facebook14 from '../assets/myProjects/facebook/14.webp'
+import Facebook15 from '../assets/myProjects/facebook/15.webp'
+import Facebook16 from '../assets/myProjects/facebook/16.webp'
+
 import Instagram1 from '../assets/myProjects/instagram/1.webp'
 import Instagram2 from '../assets/myProjects/instagram/2.webp'
 import Instagram3 from '../assets/myProjects/instagram/3.webp'
 import Instagram4 from '../assets/myProjects/instagram/4.webp'
+import Instagram5 from '../assets/myProjects/instagram/5.webp'
+import Instagram6 from '../assets/myProjects/instagram/6.webp'
+import Instagram7 from '../assets/myProjects/instagram/7.webp'
+import Instagram8 from '../assets/myProjects/instagram/8.webp'
+import Instagram9 from '../assets/myProjects/instagram/9.webp'
+import Instagram10 from '../assets/myProjects/instagram/10.webp'
+import Instagram11 from '../assets/myProjects/instagram/11.webp'
+import Instagram12 from '../assets/myProjects/instagram/12.webp'
+import Instagram13 from '../assets/myProjects/instagram/13.webp'
 
 import YouTube1 from '../assets/myProjects/youtube/1.webp'
 import YouTube2 from '../assets/myProjects/youtube/2.webp'
@@ -81,6 +120,11 @@ const projects = {
             image: Ukraine9,
             subtitle: 'Как рассказать о серьезном в игровом формате. Опыт «Сегодня»',
             link: 'https://mmr.ua/ru/show/kak-rasskazat-o-sereznom-v-igrovom-formate',
+        },
+        {
+            image: Ukraine10,
+            subtitle: '"Нам доверяет вся страна": новости "Сегодня" запустили промо-кампанию 360',
+            link: 'https://ukraine.segodnya.ua/ukraine/nam-doveryaet-vsya-strana-novosti-segodnya-zapustili-promo-kampaniyu-360-1265286.html',
         },
 
     ],
@@ -154,6 +198,148 @@ const projects = {
             link: 'https://uk.telegram-store.com/catalog/channels/zaichenkoteam/3323',
         },
     ],
+    freelance: [
+        {
+            image: Freelance1,
+            subtitle: '90% українців донатять на ЗСУ, кожен другий економить на дозвіллі – дослідження Deloitte',
+            link: 'https://mind.ua/news/20255469-90-ukrayinciv-donatyat-na-zsu-kozhen-drugij-ekonomit-na-dozvilli-doslidzhennya-deloitte',
+        },
+        {
+            image: Freelance2,
+            subtitle: 'Українці із статусом ВПО є лідерами за середнім чеком при купівлі товарів, - дослідження',
+            link: 'https://delo.ua/retail/ukrayinci-iz-statusom-vpo-je-liderami-za-serednim-cekom-pri-kupivli-tovariv-doslidzennya-413711/',
+        },
+        {
+            image: Freelance3,
+            subtitle: 'Ключові тренди у сфері людського капіталу в Україні та у світі',
+            link: 'https://news.finance.ua/ua/klyuchovi-trendy-u-sferi-lyuds-koho-kapitalu-v-ukraini-ta-u-sviti',
+        },
+        {
+            image: Freelance4,
+            subtitle: 'Ексклюзивна онлайн-прем’єра: стрічка «Довбуш» доступна на SWEET.TV',
+            link: 'https://broadcast.net.ua/ru/news-broadcast/10253-ekskliuzyvna-onlain-premiera-strichka-dovbush-dostupna-na-sweettv',
+        },
+        {
+            image: Freelance5,
+            subtitle: 'Хоробрі Зайці» повертаються: цікаві факти про мультсеріал',
+            link: 'https://www.moirebenok.ua/materialy-na-ukrainskom-yazyke/horobri-zajtsi-povertayutsya-tsikavi-fakti-pro-multserial/',
+        },
+        {
+            image: Freelance6,
+            subtitle: '16 захопливих мультфільмів для різних вікових груп',
+            link: 'https://www.moirebenok.ua/psihologiya/vospitanie/16-zahoplyuyuchih-multfilmiv-dlya-riznih-vikovih-grup/',
+        },
+        {
+            image: Freelance7,
+            subtitle: 'Серіал «Ведмідь» тепер можна дивитись українською',
+            link: 'https://meta.ua/uk/showbiz/kino/92566-serial-vedmid-teper-mozhna-divitis-ukrayinskoyu/ ',
+        },
+        {
+            image: Freelance8,
+            subtitle: '5 серіалів в українській озвучці, від яких неможливо відірватися',
+            link: 'https://themango.com.ua/5-serialiv-v-ukrayinskij-ozvuchtsi-vid-yakyh-nemozhlyvo-vidirvatysya/',
+        },
+        {
+            image: Freelance9,
+            subtitle: 'Один із найкращих серіалів року «Ведмідь» тепер можна легально переглянути в Україні',
+            link: 'https://www.village.com.ua/village/culture/culture-news/345117-odin-iz-naykraschih-serialiv-roku-vedmid-teper-mozhna-legalno-pereglyanuti-v-ukrayini',
+        },
+        {
+            image: Freelance10,
+            subtitle: 'Sweet TV поділився цікавими фактами про озвучування серіалу «Ведмідь»',
+            link: 'https://nachasi.com/cinema/2023/11/17/fakty-pro-vedmid/ ',
+        },
+        {
+            image: Freelance11,
+            subtitle: "Реєстрація в Єдиній судовій системі: для кого обов'язкова з 19 жовтня 2023 року, а для кого – з 20 лютого 2024?",
+            link: 'https://jurliga.ligazakon.net/news/224317_restratsya-v-diny-sudovy-sistem-dlya-kogo-obovyazkova-z-19-zhovtnya-2023-roku-a-dlya-kogo--z-20-lyutogo-2024',
+        },
+
+    ],
+    facebook: [
+        {
+            image: Facebook1,
+            subtitle: 'Курси, які привернуть увагу Вашої дитини до навчання',
+            link: 'https://www.facebook.com/RedMonsterUA/photos/a.479764017485564/486371963491436/',
+        },
+        {
+            image: Facebook2,
+            subtitle: 'Переваги навчання online',
+            link: 'https://www.facebook.com/RedMonsterUA/posts/519341116861187',
+        },
+        {
+            image: Facebook3,
+            subtitle: 'Який з наших курсів Вам найбільш цікаво розпочати?',
+            link: 'https://www.facebook.com/RedMonsterUA/posts/495711005890865',
+        },
+        {
+            image: Facebook4,
+            subtitle: 'Хочемо стати для вас підтримкою в такий непростий час',
+            link: 'https://www.facebook.com/RedMonsterUA/posts/514758143998452',
+        },
+
+        // kjhkhghg
+        {
+            image: Facebook5,
+            subtitle: '«Лабораторія здоров’я» взяла ексклюзивне інтерв’ю в Олександра Страфуна',
+            link: 'https://www.facebook.com/www.ukraine24.ua/photos/pb.100064755966897.-2207520000/1566607806865951/?type=3',
+        },
+        {
+            image: Facebook6,
+            subtitle: 'Відчуйте, як лунає та чим славетний півострів у новому випуску «Як звучить Україна»',
+            link: 'https://www.facebook.com/www.ukraine24.ua/photos/pb.100064755966897.-2207520000/1560085940851471/?type=3',
+        },
+        {
+            image: Facebook7,
+            subtitle: 'Чому людство виявилось не готовим до такого випробування?',
+            link: 'https://www.facebook.com/www.ukraine24.ua/photos/pb.100064755966897.-2207520000/1540615682798497/?type=3',
+        },
+        {
+            image: Facebook8,
+            subtitle: 'Україна24 сьогодні відзначає перший рік мовлення у прямому ефірі',
+            link: 'https://www.facebook.com/www.ukraine24.ua/photos/pb.100064755966897.-2207520000/1507091132817619/?type=3',
+        },
+        {
+            image: Facebook9,
+            subtitle: 'Україна24 спецефір «Гроші на життя»',
+            link: 'https://www.facebook.com/www.ukraine24.ua/photos/pb.100064755966897.-2207520000/1502556616604404/?type=3',
+        },
+        {
+            image: Facebook10,
+            subtitle: 'Україна24 у спецефірі «Америка обирає 2020» Євгеній Кисельов',
+            link: 'https://www.facebook.com/www.ukraine24.ua/photos/pb.100064755966897.-2207520000/1468022836724449/?type=3',
+        },
+        {
+            image: Facebook11,
+            subtitle: 'Сьогодні й Україна 24 завжди там, де найважливіше!',
+            link: 'https://www.facebook.com/www.ukraine24.ua/photos/pb.100064755966897.-2207520000/1463649563828443/?type=3',
+        },
+        {
+            image: Facebook12,
+            subtitle: 'Як зрозуміти, що у продукті є цукри?',
+            link: 'https://www.facebook.com/pronyrky/posts/1086272535239597 ',
+        },
+        {
+            image: Facebook13,
+            subtitle: 'Існує міф, що хронічна хвороба нирок — непоширена та рідкісна хвороба. Однак це не так!',
+            link: 'https://www.facebook.com/pronyrky/posts/1114464022420448 ',
+        },
+        {
+            image: Facebook14,
+            subtitle: 'у Харкові запрацював новий діалізний центр «Фрезеніус Медикал Кер Україна»!',
+            link: 'https://www.facebook.com/pronyrky/posts/1113981089135408',
+        },
+        {
+            image: Facebook15,
+            subtitle: 'На початкових стадіях ХХН важливо ретельно стежити за тим, що ви їсте та в якій кількості.',
+            link: 'https://www.facebook.com/pronyrky/posts/1134463270420523',
+        },
+        {
+            image: Facebook16,
+            subtitle: 'Що таке гемодіаліз очима пацієнтів? ',
+            link: 'https://www.facebook.com/pronyrky/posts/1136330530233797',
+        },
+    ],
     instagram: [
         {
             image: Instagram1,
@@ -174,6 +360,51 @@ const projects = {
             image: Instagram4,
             subtitle: 'Today, 2000 cats and dogs live in the shelter.',
             link: 'https://www.instagram.com/p/CZZbaJmoRZr/?igshid=YmMyMTA2M2Y%3D',
+        },
+        {
+            image: Instagram5,
+            subtitle: 'Цікаві факти про курси',
+            link: 'https://www.instagram.com/p/CmJkfAJD7zA/',
+        },
+        {
+            image: Instagram6,
+            subtitle: 'Чому тобі буде цікаво навчатися разом з Red Monster?',
+            link: 'https://www.instagram.com/p/Cl85OkOjp2y/',
+        },
+        {
+            image: Instagram7,
+            subtitle: 'Улюблені колядки та щедрівки у несподіваних, але таких чарівних джазових обробках...',
+            link: 'https://www.instagram.com/p/CJojix7hQvQ/?img_index=1',
+        },
+        {
+            image: Instagram8,
+            subtitle: 'Вже сьогодні на Святвечір ми почуємо "Як звучить Україна"',
+            link: 'https://www.instagram.com/p/CJsoPsXhO4Y/?img_index=1',
+        },
+        {
+            image: Instagram9,
+            subtitle: 'Не пропустіть вже о 21:00 різдвяний концерт "Як звучить Україна"!',
+            link: 'https://www.instagram.com/p/CJtoiBdhUlm/?img_index=1',
+        },
+        {
+            image: Instagram10,
+            subtitle: 'Україна24 сьогодні відзначає перший рік мовлення у прямому ефірі',
+            link: 'https://www.instagram.com/p/CI2W9dbBKsc/?img_index=1 ',
+        },
+        {
+            image: Instagram11,
+            subtitle: 'Рік з моменту запуску інформаційного телеканалу Україна24.',
+            link: 'https://www.instagram.com/p/CI0FCRvhpAn/',
+        },
+        {
+            image: Instagram12,
+            subtitle: 'Ексклюзивне інтервʼю з Володимиром Зеленським та Анджеєм Дудою',
+            link: 'https://www.instagram.com/p/CGR5felhV_s/',
+        },
+        {
+            image: Instagram13,
+            subtitle: 'Канал Україна24 став лауреатом програми "Людина року-2020"!',
+            link: 'https://www.instagram.com/p/CLUMV08hnw7/',
         },
     ],
     yuotube: [
@@ -218,6 +449,13 @@ export const projectsDataUa = [
     },
     {
         id: uuidv4(),
+        title: 'Фриланс',
+        text: "Комунікація зі ЗМІ, генерування інфоприводів, написання пресрелізів, анонсів, коментарів, статей і дайджестів новин. Антикризовий піар. Реалізація комунікаційної стратегії, розроблення контент-плану й написання матеріалів для сайту, соцмереж.",
+        projects: projects.freelance,
+        filter: 'freelance'
+    },
+    {
+        id: uuidv4(),
         title: 'LeverX Group',
         text: 'Брала участь у розвитку HR-бренду компанії; створенні PR-стратегії. Ініціювала PR-кампанії для залучення співробітників; популяризувала ІТ-курси компанії, взаємодіяла з університетами, студентськими спільнотами; комунікувала зі ЗМІ (написання пресрелізів, статей, інтервю, анонсів, створення профільних сторінок компанії).<br/> Організовувала заходи (мітапи), супроводжувала проєкти з інформування співробітників (новинні розсилки, огляди, буклети корпоративних видань), внутрішній документообіг і звітність.',
         projects: projects.leverx,
@@ -225,8 +463,15 @@ export const projectsDataUa = [
     },
     {
         id: uuidv4(),
+        title: 'Facebook',
+        text: 'Разом із СММ-менеджером створювала контент-план, писала тексти публікацій, знімала сториз, брала участь в організації трансляцій; придумувала креативи для рекламних кампаній.',
+        projects: projects.facebook,
+        filter: 'facebook'
+    },
+    {
+        id: uuidv4(),
         title: 'Instagram',
-        text: 'Створювала контент (сторіз, пости, опитування) про життя українського офісу, колективу компанії, анонси про фахові заходи, які організовує команда в Україні. Брифувала дизайнера щодо графіки та СММ-менеджера — щодо дати публікації, налаштування таргетингової реклами.',
+        text: 'Разом із СММ-менеджером створювала контент-план, писала тексти публікацій, знімала сториз, брала участь в організації трансляцій; придумувала креативи для рекламних кампаній.',
         projects: projects.instagram,
         filter: 'instagram'
     },
@@ -256,6 +501,13 @@ export const projectsDataEn = [
     },
     {
         id: uuidv4(),
+        title: 'Freelance',
+        text: "Communication with the media, generating newsworthy events, writing press releases,announcements, comments, articles and news digests. Anti-crisis PR. Implementation of acommunication strategy, development of a content plan, writing materials for the website and social networks.",
+        projects: projects.freelance,
+        filter: 'freelance'
+    },
+    {
+        id: uuidv4(),
         title: 'LeverX',
         text: 'Designed, implemented the company’s HR brand; created the company’s PR strategy, developed a plan for conducting PR campaigns to attract employees. I popularized the company\'s IT courses, interacted with universities, student communities; communicated with the media and created different materials(columns, comments, press releases, articles, interviews, podcasts).Organized events(meetups).Supported of projects for informing employees(newsletters, reviews, brochures of corporate publications).',
         projects: projects.leverx,
@@ -263,8 +515,15 @@ export const projectsDataEn = [
     },
     {
         id: uuidv4(),
+        title: 'Facebook',
+        text: 'Together with the SMM manager, I created a content plan, wrote texts for publications, shot stories, participated in the organization of broadcasts; I came up with creatives for advertising campaigns.',
+        projects: projects.facebook,
+        filter: 'facebook'
+    },
+    {
+        id: uuidv4(),
         title: 'Instagram',
-        text: 'I created the content (stories, posts, surveys) about the life of the Ukrainian office, the company\'s staff, announcements about professional events organized by the team in Ukraine. I briefed the designer about the graphics and the SMM manager about the date of publication, setting up targeted advertising.',
+        text: 'Together with the SMM manager, I created a content plan, wrote texts for publications, shot stories, participated in the organization of broadcasts; I came up with creatives for advertising campaigns.',
         projects: projects.instagram,
         filter: 'instagram'
     },
