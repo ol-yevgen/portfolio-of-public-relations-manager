@@ -19,9 +19,16 @@ const LanguageSelector = () => {
             onChange={changeLang}
         >
             <option
+                className="lang-select__en"
+                value="en">
+                EN
+            </option>
+            <option
                 className="lang-select__ua"
-                value="ua">UA</option>
-            <option className="lang-select__en" value="en">EN</option>
+                value="ua">
+                UA
+            </option>
+            
         </select>
     )
 }
