@@ -3,7 +3,7 @@ export const aboutSectionDataUa = [
         title: 'Про мене',
         text: 'Ваш ідеальний креативний PR-менеджер, оскільки:',
         services: [
-            '4 роки працюю й удосконалююсь у піарі та журналістиці, 2 роки — у диджиталі',
+            '6 років працюю й удосконалююсь у піарі та журналістиці, 2 роки — у диджиталі',
             'Не боюсь дедлайнів і фрази: «Мені через годину потрібен реліз» :)',
             'Організовую заходи, створюю контент для ЗМІ і соцмереж',
         ],
@@ -59,7 +59,7 @@ export const aboutSectionDataEn = [
         title: 'about me',
         text: 'Iʼm your ideal creative PR-manager, because:',
         services: [
-            'I have been working and improving in PR and journalism for 4 years, 2 —years in digital',
+            'I have been working and improving in PR and journalism for 6 years, 2 —years in digital',
             'I am not afraid of deadlines and the phrase: "I need a press release in an hour" :)',
             'I organize events, create content for the media and social networks',
         ],
